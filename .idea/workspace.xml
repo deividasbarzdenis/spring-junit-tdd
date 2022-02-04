@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70fa373d-3a18-456c-875a-6cf1d7df23e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productservice/src/main/java/lt/debarz/productservice/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productservice/src/main/java/lt/debarz/productservice/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productservice/src/main/java/lt/debarz/productservice/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productservice/src/main/java/lt/debarz/productservice/web/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/debarz/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lt/debarz/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/src/main/java/lt/debarz/productservice/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/java/lt/debarz/productservice/service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +62,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643977291438</updated>
-      <workItem from="1643977292641" duration="5748000" />
+      <workItem from="1643977292641" duration="6489000" />
     </task>
+    <task id="LOCAL−00001" summary="Added Product POJO class and Product repository with JDBC template.">
+      <created>1643998433094</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1643998433094</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Product POJO class and Product repository with JDBC template." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Product POJO class and Product repository with JDBC template." />
   </component>
 </project>
