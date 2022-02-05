@@ -57,6 +57,29 @@ public class ProductController {
     }
 
     /**
+     * Creates a new product.
+     * @param product   The product to create.
+     * @return          The created product.
+     */
+    @PostMapping("")
+    public ResponseEntity<Product> createProduct(@RequestBody Product product) {
+        logger.info("Creating new product with name: {}, quantity: {}", product.getName(), product.getQuantity());
+
+        // Create the new product
+        Product newProduct = productService.save(product);
+
+        try {
+            // Build a created response
+            return ResponseEntity
+                    .created(new URI("/product/" + newProduct.getId()))
+                    .eTag(Integer.toString(newProduct.getVersion()))
+                    .body(newProduct);
+        } catch (URISyntaxException e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+
+    /**
      * Updates the fields in the specified product with the specified ID.
      *
      * @param product The product field values to update.
