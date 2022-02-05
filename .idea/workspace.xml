@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70fa373d-3a18-456c-875a-6cf1d7df23e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/productservice/src/main/resources/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productservice/src/test/resources/datasets/products.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643977291438</updated>
-      <workItem from="1643977292641" duration="10432000" />
+      <workItem from="1643977292641" duration="10763000" />
     </task>
     <task id="LOCAL−00001" summary="Added Product POJO class and Product repository with JDBC template.">
       <created>1643998433094</created>
@@ -82,7 +83,13 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1644058317690</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="Added schema of products table">
+      <created>1644059076950</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1644059076950</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +99,7 @@
     <MESSAGE value="Added Product POJO class and Product repository with JDBC template." />
     <MESSAGE value="Added Product service class implementation." />
     <MESSAGE value="Added Product controller class for handle web http requests and responses." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Product controller class for handle web http requests and responses." />
+    <MESSAGE value="Added schema of products table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added schema of products table" />
   </component>
 </project>
