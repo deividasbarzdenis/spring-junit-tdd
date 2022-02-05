@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70fa373d-3a18-456c-875a-6cf1d7df23e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/productservice/src/test/java/lt/debarz/productservice/service/ProductServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productservice/src/test/java/lt/debarz/productservice/repository/ProductRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productservice/src/test/java/lt/debarz/productservice/repository/ProductRepositoryTestConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,11 +58,12 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="lt.debarz.productservice.repository" />
       <recent name="lt.debarz.productservice.service" />
       <recent name="lt.debarz.productservice.web" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductServiceTest">
+  <component name="RunManager" selected="JUnit.ProductRepositoryTest">
     <configuration name="ProductControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="productservice" />
       <extension name="coverage">
@@ -76,49 +79,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductControllerTest.testCreateProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="productservice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lt.debarz.productservice.web.*" />
+          <option name="PATTERN" value="lt.debarz.productservice.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lt.debarz.productservice.web" />
-      <option name="MAIN_CLASS_NAME" value="lt.debarz.productservice.web.ProductControllerTest" />
-      <option name="METHOD_NAME" value="testCreateProduct" />
+      <option name="PACKAGE_NAME" value="lt.debarz.productservice.repository" />
+      <option name="MAIN_CLASS_NAME" value="lt.debarz.productservice.repository.ProductRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="productservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.debarz.productservice.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.debarz.productservice.repository" />
+      <option name="MAIN_CLASS_NAME" value="lt.debarz.productservice.repository.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductControllerTest.testGetProductByIdFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductRepositoryTest.testFindByIdSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="productservice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lt.debarz.productservice.web.*" />
+          <option name="PATTERN" value="lt.debarz.productservice.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lt.debarz.productservice.web" />
-      <option name="MAIN_CLASS_NAME" value="lt.debarz.productservice.web.ProductControllerTest" />
-      <option name="METHOD_NAME" value="testGetProductByIdFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductControllerTest.testProductPutSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="productservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lt.debarz.productservice.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lt.debarz.productservice.web" />
-      <option name="MAIN_CLASS_NAME" value="lt.debarz.productservice.web.ProductControllerTest" />
-      <option name="METHOD_NAME" value="testProductPutSuccess" />
+      <option name="PACKAGE_NAME" value="lt.debarz.productservice.repository" />
+      <option name="MAIN_CLASS_NAME" value="lt.debarz.productservice.repository.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="testFindByIdSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductRepositoryTest" />
+        <item itemvalue="JUnit.ProductRepositoryTest.testFindByIdSuccess" />
+        <item itemvalue="JUnit.ProductRepositoryTest.testFindAll" />
         <item itemvalue="JUnit.ProductServiceTest" />
         <item itemvalue="JUnit.ProductControllerTest" />
-        <item itemvalue="JUnit.ProductControllerTest.testCreateProduct" />
-        <item itemvalue="JUnit.ProductControllerTest.testProductPutSuccess" />
-        <item itemvalue="JUnit.ProductControllerTest.testGetProductByIdFound" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1643977291438</updated>
       <workItem from="1643977292641" duration="15594000" />
-      <workItem from="1644074696094" duration="338000" />
+      <workItem from="1644074696094" duration="2190000" />
     </task>
     <task id="LOCAL−00001" summary="Added Product POJO class and Product repository with JDBC template.">
       <created>1643998433094</created>
@@ -203,7 +205,13 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1644064249336</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="Added test class for Product service.">
+      <created>1644075119109</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1644075119109</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +224,7 @@
     <MESSAGE value="Added schema of products table" />
     <MESSAGE value="Added datasets of products to test db" />
     <MESSAGE value="Added test class for Product Controller." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test class for Product Controller." />
+    <MESSAGE value="Added test class for Product service." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test class for Product service." />
   </component>
 </project>
