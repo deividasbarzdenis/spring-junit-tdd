@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70fa373d-3a18-456c-875a-6cf1d7df23e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/productservice/src/main/java/lt/debarz/productservice/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/java/lt/debarz/productservice/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/src/main/java/lt/debarz/productservice/web/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/java/lt/debarz/productservice/web/ProductController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643977291438</updated>
-      <workItem from="1643977292641" duration="6489000" />
+      <workItem from="1643977292641" duration="9726000" />
     </task>
     <task id="LOCAL−00001" summary="Added Product POJO class and Product repository with JDBC template.">
       <created>1643998433094</created>
@@ -70,7 +71,13 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1643998433094</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Added Product service class implementation.">
+      <created>1643998990823</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1643998990823</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,6 +85,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Product POJO class and Product repository with JDBC template." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Product POJO class and Product repository with JDBC template." />
+    <MESSAGE value="Added Product service class implementation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Product service class implementation." />
   </component>
 </project>
