@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70fa373d-3a18-456c-875a-6cf1d7df23e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/productservice/src/test/java/lt/debarz/productservice/repository/ProductRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productservice/src/test/java/lt/debarz/productservice/repository/ProductRepositoryTestConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +145,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReviewserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="reviewservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="lt.debarz.reviewservice.ReviewserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ProductRepositoryTest" />
@@ -167,7 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1643977291438</updated>
       <workItem from="1643977292641" duration="15594000" />
-      <workItem from="1644074696094" duration="2190000" />
+      <workItem from="1644074696094" duration="3591000" />
     </task>
     <task id="LOCAL−00001" summary="Added Product POJO class and Product repository with JDBC template.">
       <created>1643998433094</created>
@@ -211,7 +215,13 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1644075119109</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="Added test class for Product repo, repo tested with help of DBUnit.">
+      <created>1644080566765</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1644080566765</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +235,7 @@
     <MESSAGE value="Added datasets of products to test db" />
     <MESSAGE value="Added test class for Product Controller." />
     <MESSAGE value="Added test class for Product service." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test class for Product service." />
+    <MESSAGE value="Added test class for Product repo, repo tested with help of DBUnit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test class for Product repo, repo tested with help of DBUnit." />
   </component>
 </project>
