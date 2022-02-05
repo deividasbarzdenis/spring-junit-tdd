@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70fa373d-3a18-456c-875a-6cf1d7df23e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/productservice/src/test/java/lt/debarz/productservice/web/ProductControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productservice/src/test/java/lt/debarz/productservice/service/ProductServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,10 +56,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="lt.debarz.productservice.service" />
       <recent name="lt.debarz.productservice.web" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductControllerTest">
+  <component name="RunManager" selected="JUnit.ProductServiceTest">
     <configuration name="ProductControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="productservice" />
       <extension name="coverage">
@@ -107,22 +108,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductControllerTest.testGetProductByIdNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="productservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lt.debarz.productservice.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lt.debarz.productservice.web" />
-      <option name="MAIN_CLASS_NAME" value="lt.debarz.productservice.web.ProductControllerTest" />
-      <option name="METHOD_NAME" value="testGetProductByIdNotFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProductControllerTest.testProductPutSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="productservice" />
       <extension name="coverage">
@@ -139,6 +124,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="productservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.debarz.productservice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.debarz.productservice.service" />
+      <option name="MAIN_CLASS_NAME" value="lt.debarz.productservice.service.ProductServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="productservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="lt.debarz.productservice.ProductserviceApplication" />
@@ -148,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductServiceTest" />
         <item itemvalue="JUnit.ProductControllerTest" />
         <item itemvalue="JUnit.ProductControllerTest.testCreateProduct" />
         <item itemvalue="JUnit.ProductControllerTest.testProductPutSuccess" />
         <item itemvalue="JUnit.ProductControllerTest.testGetProductByIdFound" />
-        <item itemvalue="JUnit.ProductControllerTest.testGetProductByIdNotFound" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +164,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643977291438</updated>
-      <workItem from="1643977292641" duration="14846000" />
+      <workItem from="1643977292641" duration="15594000" />
+      <workItem from="1644074696094" duration="338000" />
     </task>
     <task id="LOCAL−00001" summary="Added Product POJO class and Product repository with JDBC template.">
       <created>1643998433094</created>
@@ -196,7 +197,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1644059319881</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Added test class for Product Controller.">
+      <created>1644064249336</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1644064249336</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +215,7 @@
     <MESSAGE value="Added Product controller class for handle web http requests and responses." />
     <MESSAGE value="Added schema of products table" />
     <MESSAGE value="Added datasets of products to test db" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added datasets of products to test db" />
+    <MESSAGE value="Added test class for Product Controller." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test class for Product Controller." />
   </component>
 </project>
