@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70fa373d-3a18-456c-875a-6cf1d7df23e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/reviewservice/src/main/java/lt/debarz/reviewservice/model/Review.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reviewservice/src/main/java/lt/debarz/reviewservice/model/ReviewEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewservice/src/main/java/lt/debarz/reviewservice/service/ReviewService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -181,7 +180,7 @@
       <updated>1643977291438</updated>
       <workItem from="1643977292641" duration="15594000" />
       <workItem from="1644074696094" duration="3946000" />
-      <workItem from="1644145876120" duration="597000" />
+      <workItem from="1644145876120" duration="896000" />
     </task>
     <task id="LOCAL−00001" summary="Added Product POJO class and Product repository with JDBC template.">
       <created>1643998433094</created>
@@ -243,7 +242,19 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1644093201891</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="Created Review and ReviewEntry model data for Mongo document table">
+      <created>1644146512199</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1644146512199</updated>
+    </task>
+    <task id="LOCAL−00012" summary="Created Review repository class">
+      <created>1644146629371</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1644146629371</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +270,8 @@
     <MESSAGE value="Added test class for Product service." />
     <MESSAGE value="Added test class for Product repo, repo tested with help of DBUnit." />
     <MESSAGE value="Added review service module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added review service module" />
+    <MESSAGE value="Created Review and ReviewEntry model data for Mongo document table" />
+    <MESSAGE value="Created Review repository class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Review repository class" />
   </component>
 </project>
