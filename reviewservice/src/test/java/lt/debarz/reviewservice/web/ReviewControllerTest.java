@@ -1,5 +1,6 @@
 package lt.debarz.reviewservice.web;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lt.debarz.reviewservice.model.Review;
 import lt.debarz.reviewservice.model.ReviewEntry;
 import lt.debarz.reviewservice.service.ReviewService;
@@ -24,6 +25,7 @@ import java.util.TimeZone;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.hamcrest.Matchers.is;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doReturn;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -79,5 +81,94 @@ class ReviewControllerTest {
                 .andExpect(jsonPath("$.entries[0].username", is("test-user")))
                 .andExpect(jsonPath("$.entries[0].review", is("Great product")))
                 .andExpect(jsonPath("$.entries[0].date", is(df.format(now))));
+    }
+
+    @Test
+    @DisplayName("GET /review/reviewId - Not Found")
+    void testGetReviewByIdNotFound() throws Exception {
+        // Setup our mocked service
+        doReturn(Optional.empty()).when(service).findById("reviewId");
+
+        // Execute the GET request
+        mockMvc.perform(get("/review/{id}", "reviewId"))
+
+                // Validate that we get a 404 Not Found response
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    @DisplayName("POST /review - Success")
+    void testCreateReview() throws Exception {
+        // Setup mocked service
+        Date now = new Date();
+        Review postReview = new Review(1);
+        postReview.getEntries().add(new ReviewEntry("test-user", now, "Great product"));
+
+        Review mockReview = new Review("reviewId", 1, 1);
+        mockReview.getEntries().add(new ReviewEntry("test-user", now, "Great product"));
+
+        doReturn(mockReview).when(service).save(any());
+
+        mockMvc.perform(post("/review")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(asJsonString(mockReview)))
+
+                // Validate the response code and content type
+                .andExpect(status().isCreated())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+
+                // Validate the headers
+                .andExpect(header().string(HttpHeaders.ETAG, "\"1\""))
+                .andExpect(header().string(HttpHeaders.LOCATION, "/review/reviewId"))
+
+                // Validate the returned fields
+                .andExpect(jsonPath("$.id", is("reviewId")))
+                .andExpect(jsonPath("$.productId", is(1)))
+                .andExpect(jsonPath("$.entries.length()", is(1)))
+                .andExpect(jsonPath("$.entries[0].username", is("test-user")))
+                .andExpect(jsonPath("$.entries[0].review", is("Great product")))
+                .andExpect(jsonPath("$.entries[0].date", is(df.format(now))));
+    }
+
+    @Test
+    @DisplayName("POST /review/{productId}/entry")
+    void testAddEntryToReview() throws Exception {
+        // Setup mocked service
+        Date now = new Date();
+        ReviewEntry reviewEntry = new ReviewEntry("test-user", now, "Great product");
+        Review mockReview = new Review("1", 1, 1);
+        Review returnedReview = new Review("1", 1, 2);
+        returnedReview.getEntries().add(reviewEntry);
+
+        // Handle lookup
+        doReturn(Optional.of(mockReview)).when(service).findByProductId(1);
+
+        // Handle save
+        doReturn(returnedReview).when(service).save(any());
+
+        mockMvc.perform(post("/review/{productId}/entry", 1)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(asJsonString(reviewEntry)))
+
+                // Validate the response code and content type
+                .andExpect(status().isOk())
+                .andExpect(header().string(HttpHeaders.ETAG, "\"2\""))
+                .andExpect(header().string(HttpHeaders.LOCATION, "/review/1"))
+
+                // Validate the returned fields
+                .andExpect(jsonPath("$.id", is("1")))
+                .andExpect(jsonPath("$.productId", is(1)))
+                .andExpect(jsonPath("$.entries.length()", is(1)))
+                .andExpect(jsonPath("$.entries[0].username", is("test-user")))
+                .andExpect(jsonPath("$.entries[0].review", is("Great product")));
+    }
+
+
+    static String asJsonString(final Object obj) {
+        try {
+            return new ObjectMapper().writeValueAsString(obj);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
