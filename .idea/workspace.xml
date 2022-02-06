@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70fa373d-3a18-456c-875a-6cf1d7df23e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/reviewservice/src/main/java/lt/debarz/reviewservice/web/ReviewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reviewservice/src/test/java/lt/debarz/reviewservice/repository/ReviewRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reviewservice/src/test/java/lt/debarz/reviewservice/web/ReviewControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reviewservice/src/test/resources/data/sample.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reviewservice/src/test/resources/data/sample6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewservice/src/test/java/lt/debarz/reviewservice/repository/MongoDataFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewservice/src/test/java/lt/debarz/reviewservice/repository/MongoSpringExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewservice/src/test/java/lt/debarz/reviewservice/repository/ReviewRepositoryMoreElegantTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviewservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reviewservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviewservice/src/main/java/lt/debarz/reviewservice/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/reviewservice/src/main/java/lt/debarz/reviewservice/model/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviewservice/src/main/java/lt/debarz/reviewservice/model/ReviewEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/reviewservice/src/main/java/lt/debarz/reviewservice/model/ReviewEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviewservice/src/main/java/lt/debarz/reviewservice/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/reviewservice/src/main/java/lt/debarz/reviewservice/service/ReviewService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reviewservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/reviewservice/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviewservice/src/test/java/lt/debarz/reviewservice/ReviewserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/reviewservice/src/test/java/lt/debarz/reviewservice/ReviewserviceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reviewservice/src/test/java/lt/debarz/reviewservice/repository/ReviewRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/reviewservice/src/test/java/lt/debarz/reviewservice/repository/ReviewRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -81,7 +75,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ReviewserviceApplication">
+  <component name="RunManager" selected="JUnit.ReviewRepositoryMoreElegantTest.testSave">
     <configuration name="ProductRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="productservice" />
       <extension name="coverage">
@@ -92,53 +86,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="lt.debarz.productservice.repository" />
       <option name="MAIN_CLASS_NAME" value="lt.debarz.productservice.repository.ProductRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductRepositoryTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="productservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lt.debarz.productservice.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lt.debarz.productservice.repository" />
-      <option name="MAIN_CLASS_NAME" value="lt.debarz.productservice.repository.ProductRepositoryTest" />
-      <option name="METHOD_NAME" value="testFindAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductRepositoryTest.testFindByIdSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="productservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lt.debarz.productservice.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lt.debarz.productservice.repository" />
-      <option name="MAIN_CLASS_NAME" value="lt.debarz.productservice.repository.ProductRepositoryTest" />
-      <option name="METHOD_NAME" value="testFindByIdSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="productservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lt.debarz.productservice.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lt.debarz.productservice.service" />
-      <option name="MAIN_CLASS_NAME" value="lt.debarz.productservice.service.ProductServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,6 +107,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReviewRepositoryMoreElegantTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reviewservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.debarz.reviewservice.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.debarz.reviewservice.repository" />
+      <option name="MAIN_CLASS_NAME" value="lt.debarz.reviewservice.repository.ReviewRepositoryMoreElegantTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewRepositoryMoreElegantTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reviewservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.debarz.reviewservice.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.debarz.reviewservice.repository" />
+      <option name="MAIN_CLASS_NAME" value="lt.debarz.reviewservice.repository.ReviewRepositoryMoreElegantTest" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reviewservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.debarz.reviewservice.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.debarz.reviewservice.repository" />
+      <option name="MAIN_CLASS_NAME" value="lt.debarz.reviewservice.repository.ReviewRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="productservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="lt.debarz.productservice.ProductserviceApplication" />
@@ -176,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReviewRepositoryMoreElegantTest.testSave" />
+        <item itemvalue="JUnit.ReviewRepositoryMoreElegantTest" />
+        <item itemvalue="JUnit.ReviewRepositoryTest" />
         <item itemvalue="JUnit.ReviewControllerTest.testGetReviewByIdFound" />
         <item itemvalue="JUnit.ProductRepositoryTest" />
-        <item itemvalue="JUnit.ProductRepositoryTest.testFindByIdSuccess" />
-        <item itemvalue="JUnit.ProductRepositoryTest.testFindAll" />
-        <item itemvalue="JUnit.ProductServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +187,7 @@
       <updated>1643977291438</updated>
       <workItem from="1643977292641" duration="15594000" />
       <workItem from="1644074696094" duration="3946000" />
-      <workItem from="1644145876120" duration="6244000" />
+      <workItem from="1644145876120" duration="7642000" />
     </task>
     <task id="LOCAL−00001" summary="Added Product POJO class and Product repository with JDBC template.">
       <created>1643998433094</created>
@@ -274,7 +267,13 @@
       <option name="presentableId" value="LOCAL−00013" />
       <updated>1644146838735</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL−00014" summary="Created Review controller class for CRUD HTTP methods operations">
+      <created>1644152477273</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1644152477273</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +292,7 @@
     <MESSAGE value="Created Review and ReviewEntry model data for Mongo document table" />
     <MESSAGE value="Created Review repository class" />
     <MESSAGE value="Created Review service class for CRUD operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Review service class for CRUD operations" />
+    <MESSAGE value="Created Review controller class for CRUD HTTP methods operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Review controller class for CRUD HTTP methods operations" />
   </component>
 </project>
