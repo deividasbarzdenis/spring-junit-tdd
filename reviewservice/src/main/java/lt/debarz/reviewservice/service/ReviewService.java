@@ -1,6 +1,5 @@
 package lt.debarz.reviewservice.service;
 
-import lombok.AllArgsConstructor;
 import lt.debarz.reviewservice.model.Review;
 import lt.debarz.reviewservice.repository.ReviewRepository;
 import org.springframework.stereotype.Service;
@@ -8,18 +7,22 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@AllArgsConstructor
+//@AllArgsConstructor
 @Service
 public class ReviewService {
 
-    private final ReviewRepository repository;
+    private ReviewRepository repository;
+
+    public ReviewService(ReviewRepository repository) {
+        this.repository = repository;
+    }
 
     /**
      * Returns the review with the specified ID.
      * @param id        The ID of the review to return.
      * @return          The review with the specified ID.
      */
-    Optional<Review> findById(String id){
+    public Optional<Review> findById(String id){
         return repository.findById(id);
     }
 
@@ -28,7 +31,7 @@ public class ReviewService {
      * @param productId The product ID for which to return the review.
      * @return          The review for the specified product ID.
      */
-    Optional<Review> findByProductId(Integer productId){
+    public Optional<Review> findByProductId(Integer productId){
         return repository.findByProductId(productId);
     }
 
@@ -36,7 +39,7 @@ public class ReviewService {
      * Returns all reviews in the database.
      * @return          All reviews in the database.
      */
-    List<Review> findAll(){
+    public List<Review> findAll(){
         return repository.findAll();
     }
 
@@ -45,7 +48,7 @@ public class ReviewService {
      * @param review    The review to save.
      * @return          The saved review, including a newly generated ID.
      */
-    Review save(Review review){
+    public Review save(Review review){
         review.setVersion(1);
         return repository.save(review);
     }
@@ -55,7 +58,7 @@ public class ReviewService {
      * @param review    The review to update.
      * @return          The updated review.
      */
-    Review update(Review review){
+    public Review update(Review review){
         review.setVersion(review.getVersion()+1);
         return repository.save(review);
     }
@@ -64,7 +67,7 @@ public class ReviewService {
      * Deletes the review with the specified ID.
      * @param id        The ID of the review to delete.
      */
-    void delete(String id){
+    public void delete(String id){
         repository.deleteById(id);
     }
 }
