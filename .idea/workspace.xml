@@ -71,7 +71,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReviewControllerTest.testGetReviewByIdFound">
+  <component name="RunManager" selected="JUnit.ReviewServiceTest">
     <configuration name="ReviewControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reviewservice" />
       <extension name="coverage">
@@ -119,21 +119,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReviewRepositoryMoreElegantTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reviewservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lt.debarz.reviewservice.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lt.debarz.reviewservice.repository" />
-      <option name="MAIN_CLASS_NAME" value="lt.debarz.reviewservice.repository.ReviewRepositoryMoreElegantTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ReviewRepositoryMoreElegantTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reviewservice" />
       <extension name="coverage">
@@ -146,6 +131,21 @@
       <option name="MAIN_CLASS_NAME" value="lt.debarz.reviewservice.repository.ReviewRepositoryMoreElegantTest" />
       <option name="METHOD_NAME" value="testSave" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reviewservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.debarz.reviewservice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.debarz.reviewservice.service" />
+      <option name="MAIN_CLASS_NAME" value="lt.debarz.reviewservice.service.ReviewServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReviewServiceTest" />
         <item itemvalue="JUnit.ReviewControllerTest.testGetReviewByIdFound" />
         <item itemvalue="JUnit.ReviewControllerTest.testCreateReview" />
         <item itemvalue="JUnit.ReviewControllerTest" />
         <item itemvalue="JUnit.ReviewRepositoryMoreElegantTest.testSave" />
-        <item itemvalue="JUnit.ReviewRepositoryMoreElegantTest" />
       </list>
     </recent_temporary>
   </component>
