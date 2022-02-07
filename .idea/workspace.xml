@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70fa373d-3a18-456c-875a-6cf1d7df23e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/inventoryservice/src/main/java/lt/debarz/inventoryservice/web/InventoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventoryservice/src/test/java/lt/debarz/inventoryservice/integration/InventoryServiceIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventoryservice/src/test/java/lt/debarz/inventoryservice/service/InventoryServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventoryservice/src/test/java/lt/debarz/inventoryservice/web/InventoryControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventoryservice/src/test/resources/__files/json/inventory-response-after-post.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventoryservice/src/test/resources/__files/json/inventory-response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventoryservice/src/test/resources/mappings/get-inventory-1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventoryservice/src/test/resources/mappings/get-inventory-2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventoryservice/src/test/resources/mappings/post-inventory-1-purchaseRecord.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventoryservice/src/test/resources/test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventoryservice/src/main/java/lt/debarz/inventoryservice/model/InventoryRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventoryservice/src/main/java/lt/debarz/inventoryservice/model/InventoryRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventoryservice/src/main/java/lt/debarz/inventoryservice/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventoryservice/src/main/java/lt/debarz/inventoryservice/service/InventoryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +79,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="lt.debarz.inventoryservice.web" />
+      <recent name="lt.debarz.inventoryservice.service" />
       <recent name="lt.debarz.reviewservice.service" />
       <recent name="lt.debarz.reviewservice.repository" />
       <recent name="lt.debarz.reviewservice.web" />
-      <recent name="lt.debarz.productservice.repository" />
-      <recent name="lt.debarz.productservice.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -82,80 +93,81 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReviewServiceTest">
-    <configuration name="ReviewControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reviewservice" />
+  <component name="RunManager" selected="JUnit.InventoryServiceTest">
+    <configuration name="InventoryControllerTest.testCreatePurchaseRecord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="inventoryservice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lt.debarz.reviewservice.web.*" />
+          <option name="PATTERN" value="lt.debarz.inventoryservice.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lt.debarz.reviewservice.web" />
-      <option name="MAIN_CLASS_NAME" value="lt.debarz.reviewservice.web.ReviewControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReviewControllerTest.testCreateReview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reviewservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lt.debarz.reviewservice.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lt.debarz.reviewservice.web" />
-      <option name="MAIN_CLASS_NAME" value="lt.debarz.reviewservice.web.ReviewControllerTest" />
-      <option name="METHOD_NAME" value="testCreateReview" />
+      <option name="PACKAGE_NAME" value="lt.debarz.inventoryservice.web" />
+      <option name="MAIN_CLASS_NAME" value="lt.debarz.inventoryservice.web.InventoryControllerTest" />
+      <option name="METHOD_NAME" value="testCreatePurchaseRecord" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReviewControllerTest.testGetReviewByIdFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reviewservice" />
+    <configuration name="InventoryServiceMappingTest.testGetInventorRecordNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="inventoryservice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lt.debarz.reviewservice.web.*" />
+          <option name="PATTERN" value="lt.debarz.inventoryservice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lt.debarz.reviewservice.web" />
-      <option name="MAIN_CLASS_NAME" value="lt.debarz.reviewservice.web.ReviewControllerTest" />
-      <option name="METHOD_NAME" value="testGetReviewByIdFound" />
+      <option name="PACKAGE_NAME" value="lt.debarz.inventoryservice.service" />
+      <option name="MAIN_CLASS_NAME" value="lt.debarz.inventoryservice.service.InventoryServiceMappingTest" />
+      <option name="METHOD_NAME" value="testGetInventorRecordNotFound" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReviewRepositoryMoreElegantTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reviewservice" />
+    <configuration name="InventoryServiceMappingTest.testGetInventorRecordSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="inventoryservice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lt.debarz.reviewservice.repository.*" />
+          <option name="PATTERN" value="lt.debarz.inventoryservice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lt.debarz.reviewservice.repository" />
-      <option name="MAIN_CLASS_NAME" value="lt.debarz.reviewservice.repository.ReviewRepositoryMoreElegantTest" />
-      <option name="METHOD_NAME" value="testSave" />
+      <option name="PACKAGE_NAME" value="lt.debarz.inventoryservice.service" />
+      <option name="MAIN_CLASS_NAME" value="lt.debarz.inventoryservice.service.InventoryServiceMappingTest" />
+      <option name="METHOD_NAME" value="testGetInventorRecordSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReviewServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reviewservice" />
+    <configuration name="InventoryServiceMappingTest.testPurchaseProductSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="inventoryservice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lt.debarz.reviewservice.service.*" />
+          <option name="PATTERN" value="lt.debarz.inventoryservice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lt.debarz.reviewservice.service" />
-      <option name="MAIN_CLASS_NAME" value="lt.debarz.reviewservice.service.ReviewServiceTest" />
+      <option name="PACKAGE_NAME" value="lt.debarz.inventoryservice.service" />
+      <option name="MAIN_CLASS_NAME" value="lt.debarz.inventoryservice.service.InventoryServiceMappingTest" />
+      <option name="METHOD_NAME" value="testPurchaseProductSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="inventoryservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.debarz.inventoryservice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.debarz.inventoryservice.service" />
+      <option name="MAIN_CLASS_NAME" value="lt.debarz.inventoryservice.service.InventoryServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -184,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReviewServiceTest" />
-        <item itemvalue="JUnit.ReviewControllerTest.testGetReviewByIdFound" />
-        <item itemvalue="JUnit.ReviewControllerTest.testCreateReview" />
-        <item itemvalue="JUnit.ReviewControllerTest" />
-        <item itemvalue="JUnit.ReviewRepositoryMoreElegantTest.testSave" />
+        <item itemvalue="JUnit.InventoryServiceTest" />
+        <item itemvalue="JUnit.InventoryServiceMappingTest.testPurchaseProductSuccess" />
+        <item itemvalue="JUnit.InventoryServiceMappingTest.testGetInventorRecordNotFound" />
+        <item itemvalue="JUnit.InventoryServiceMappingTest.testGetInventorRecordSuccess" />
+        <item itemvalue="JUnit.InventoryControllerTest.testCreatePurchaseRecord" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +214,8 @@
       <updated>1643977291438</updated>
       <workItem from="1643977292641" duration="15594000" />
       <workItem from="1644074696094" duration="3946000" />
-      <workItem from="1644145876120" duration="13688000" />
+      <workItem from="1644145876120" duration="14389000" />
+      <workItem from="1644260828429" duration="1255000" />
     </task>
     <task id="LOCAL−00001" summary="Added Product POJO class and Product repository with JDBC template.">
       <created>1643998433094</created>
@@ -324,7 +337,13 @@
       <option name="presentableId" value="LOCAL−00020" />
       <updated>1644222028052</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL−00021" summary="Inventory controller created">
+      <created>1644222397756</created>
+      <option name="number" value="LOCAL−00021" />
+      <option name="presentableId" value="LOCAL−00021" />
+      <updated>1644222397756</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +369,7 @@
     <MESSAGE value="Created inventory service module" />
     <MESSAGE value="Inventory service model created" />
     <MESSAGE value="Inventory service service created and http link added to application.properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inventory service service created and http link added to application.properties" />
+    <MESSAGE value="Inventory controller created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inventory controller created" />
   </component>
 </project>
