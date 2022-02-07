@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70fa373d-3a18-456c-875a-6cf1d7df23e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/inventoryservice/src/main/java/lt/debarz/inventoryservice/service/InventoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventoryservice/src/main/java/lt/debarz/inventoryservice/model/PurchaseRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventoryservice/src/main/java/lt/debarz/inventoryservice/model/PurchaseRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventoryservice/src/main/java/lt/debarz/inventoryservice/web/InventoryController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +202,7 @@
       <updated>1643977291438</updated>
       <workItem from="1643977292641" duration="15594000" />
       <workItem from="1644074696094" duration="3946000" />
-      <workItem from="1644145876120" duration="13264000" />
+      <workItem from="1644145876120" duration="13688000" />
     </task>
     <task id="LOCAL−00001" summary="Added Product POJO class and Product repository with JDBC template.">
       <created>1643998433094</created>
@@ -319,7 +318,13 @@
       <option name="presentableId" value="LOCAL−00019" />
       <updated>1644221759671</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL−00020" summary="Inventory service service created and http link added to application.properties">
+      <created>1644222028052</created>
+      <option name="number" value="LOCAL−00020" />
+      <option name="presentableId" value="LOCAL−00020" />
+      <updated>1644222028052</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +349,7 @@
     <MESSAGE value="Created Review service tests" />
     <MESSAGE value="Created inventory service module" />
     <MESSAGE value="Inventory service model created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inventory service model created" />
+    <MESSAGE value="Inventory service service created and http link added to application.properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inventory service service created and http link added to application.properties" />
   </component>
 </project>
