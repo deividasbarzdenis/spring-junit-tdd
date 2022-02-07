@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70fa373d-3a18-456c-875a-6cf1d7df23e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/inventoryservice/src/main/java/lt/debarz/inventoryservice/model/InventoryRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventoryservice/src/main/java/lt/debarz/inventoryservice/service/InventoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventoryservice/src/main/java/lt/debarz/inventoryservice/model/PurchaseRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventoryservice/src/main/java/lt/debarz/inventoryservice/model/PurchaseRecord.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +203,7 @@
       <updated>1643977291438</updated>
       <workItem from="1643977292641" duration="15594000" />
       <workItem from="1644074696094" duration="3946000" />
-      <workItem from="1644145876120" duration="12908000" />
+      <workItem from="1644145876120" duration="13264000" />
     </task>
     <task id="LOCAL−00001" summary="Added Product POJO class and Product repository with JDBC template.">
       <created>1643998433094</created>
@@ -313,7 +313,13 @@
       <option name="presentableId" value="LOCAL−00018" />
       <updated>1644219949595</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL−00019" summary="Inventory service model created">
+      <created>1644221759671</created>
+      <option name="number" value="LOCAL−00019" />
+      <option name="presentableId" value="LOCAL−00019" />
+      <updated>1644221759671</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +343,7 @@
     <MESSAGE value="Created Review controller tests" />
     <MESSAGE value="Created Review service tests" />
     <MESSAGE value="Created inventory service module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created inventory service module" />
+    <MESSAGE value="Inventory service model created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inventory service model created" />
   </component>
 </project>
