@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="70fa373d-3a18-456c-875a-6cf1d7df23e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviewservice/src/test/java/lt/debarz/reviewservice/web/ReviewControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/reviewservice/src/test/java/lt/debarz/reviewservice/web/ReviewControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventoryservice/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/inventoryservice/HELP.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -47,7 +47,7 @@
     <property name="jdk.selected.JAVA_MODULE" value="14" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/demo" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -57,11 +57,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="lt.debarz.reviewservice.service" />
       <recent name="lt.debarz.reviewservice.repository" />
       <recent name="lt.debarz.reviewservice.web" />
       <recent name="lt.debarz.productservice.repository" />
       <recent name="lt.debarz.productservice.service" />
-      <recent name="lt.debarz.productservice.web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -150,6 +150,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InventoryserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="inventoryservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="lt.debarz.inventoryservice.InventoryserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="productservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="lt.debarz.productservice.ProductserviceApplication" />
@@ -184,7 +191,7 @@
       <updated>1643977291438</updated>
       <workItem from="1643977292641" duration="15594000" />
       <workItem from="1644074696094" duration="3946000" />
-      <workItem from="1644145876120" duration="9719000" />
+      <workItem from="1644145876120" duration="12067000" />
     </task>
     <task id="LOCAL−00001" summary="Added Product POJO class and Product repository with JDBC template.">
       <created>1643998433094</created>
@@ -276,7 +283,19 @@
       <option name="presentableId" value="LOCAL−00015" />
       <updated>1644153948211</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL−00016" summary="Created Review controller tests">
+      <created>1644155866639</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1644155866639</updated>
+    </task>
+    <task id="LOCAL−00017" summary="Created Review service tests">
+      <created>1644156015072</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1644156015072</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +316,8 @@
     <MESSAGE value="Created Review service class for CRUD operations" />
     <MESSAGE value="Created Review controller class for CRUD HTTP methods operations" />
     <MESSAGE value="Created Review repository tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Review repository tests" />
+    <MESSAGE value="Created Review controller tests" />
+    <MESSAGE value="Created Review service tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Review service tests" />
   </component>
 </project>
